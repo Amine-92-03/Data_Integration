@@ -1,0 +1,14 @@
+{
+  "dependencies": {
+    "cli-progress": "^3.10.0",
+    "dotenv": "^16.0.0",
+    "fs": "^0.0.1-security",
+    "log-update": "^5.0.0",
+    "mssql": "^8.0.2",
+    "node-cron": "^3.0.0",
+    "nodemon": "^2.0.16",
+    "path": "^0.12.7",
+    "shelljs": "^0.8.5",
+    "xlsx": "^0.18.3"
+  }
+}

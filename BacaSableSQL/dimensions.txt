@@ -1,0 +1,86 @@
+                    Dimensionnement Bac à Sable
+                    ___________________________
+
+Colonnes existantes:
+_____________________
+Domaine => char
+Serveur => char
+Tache => char
+MU => char
+Unité de gestion =>char
+sess => char
+Session => char
+Job => char
+Uproc => char
+Statut =>char
+Prévu => Datetime
+Début => Datetime
+Fin => Datetime
+Durée => Datetime
+Temps estimé => Datetime
+Fil rouge => numeric
+Info => char
+_________________________
+Colonnes supplimentaires
+_________________________
+Date création fichier => Datetime
+Date dernière modification =>Datetime
+ID jour => numeric
+Flag Fichier => numeric (1,2,3)
+Nom du fichier =>char
+ID => numeric Key auto 
+Nombre de lignes => numeric
+Taille fichier => numeric
+Auteur fichier => char
+ID fichier => numeric ( AAAAMMJJHHMMF) =>(F : Flag (1,2,3))
+
+
+                         Table organisée requete SQL
+                       ______________________________
+
+CREATE TABLE BacASableRapportProdAsten(
+        id INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
+	[ID_fichier] [numeric](15, 5),
+	[Flag_Fichier] [numeric](8, 0),
+	[ID_jour] [numeric](15, 5),
+	[Domaine] [varchar](100),
+	[Serveur] [varchar](100),
+	[Tache] [varchar](100),
+	[MU] [varchar](100),
+	[Unite_de_gestion] [varchar](100),
+	[sess] [varchar](100),
+	[Session] [varchar](100),
+	[Job] [varchar](100),
+	[Uproc] [varchar](100),
+	[Statut] [varchar](100),
+	[Prévu] [datetime],
+	[Début] [datetime],
+	[Fin] [datetime],
+	[Duree] [datetime],
+	[Temps_estime] [datetime],
+	[Fil_rouge] [numeric](15, 5),
+	[Info] [varchar](100),
+	[Date_creation_fichier] [datetime],
+	[Date_derniere_modification] [datetime],
+	[Nom_du_fichier] [varchar](100),
+	[Nombre_de_lignes] [numeric](15, 5),
+	[Taille_du_fichier] [numeric](15, 5),
+	[Auteur_du_fichier] [varchar](100)
+)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
